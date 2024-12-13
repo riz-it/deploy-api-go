@@ -1,0 +1,8 @@
+staging:
+  stage: deploy
+  needs: [gitlab_registry]
+  script:
+    - echo "Deploying the application..."
+  when: manual
+  only:
+    - main

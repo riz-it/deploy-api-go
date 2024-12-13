@@ -1,0 +1,7 @@
+test:
+  stage: test
+  image: golang:alpine
+  script:
+    - echo "run test"
+  only:
+    - main
